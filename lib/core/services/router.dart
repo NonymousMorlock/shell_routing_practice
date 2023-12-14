@@ -43,7 +43,6 @@ final router = GoRouter(
             const ShopView(),
             state: state,
           ),
-          routes: [],
         ),
       ],
     ),

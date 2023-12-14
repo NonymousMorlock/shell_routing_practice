@@ -14,6 +14,8 @@ class DashboardView extends StatefulWidget {
 }
 
 class _DashboardViewState extends State<DashboardView> {
+  /// In this case, I'm not using this, but you could totally go this route
+  /// and use it to track
   int currentIndex = 0;
 
   @override
@@ -26,10 +28,15 @@ class _DashboardViewState extends State<DashboardView> {
           switch (index) {
             case 0:
               context.go('/');
+              // if you were using currentIndex, then you'd have to change it
+              // here
+              currentIndex = index;
             case 1:
               context.go('/profile');
+            // and here
             case 2:
               context.go('/shop');
+            // and here
           }
         },
         currentIndex: widget.state.fullPath == HomeView.routeName

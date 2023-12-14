@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 
 class HomeView extends StatelessWidget {
@@ -15,4 +14,3 @@ class HomeView extends StatelessWidget {
     );
   }
 }
-
